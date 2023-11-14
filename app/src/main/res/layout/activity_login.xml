@@ -5,103 +5,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#FFF3F0"
     tools:context=".MainActivity">
 
 
     <Button
-        android:background="@color/white"
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="312dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="164dp"
+        android:background="#FDE12D"
         android:text="@string/txt_ingresar_btn"
-        android:textColor="#EA3CFF"
+        android:textColor="#32FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewWelcome"
+        android:layout_width="343dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
         app:layout_constraintDimensionRatio="16:9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon" />
 
-
-    <TextView
-        android:id="@+id/textViewWelcome"
-        android:layout_width="412dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/alex_brush"
-        android:gravity="center"
-        android:text="Bienvenido"
-        android:textColor="#FF0000"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textViewSheet1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="   Contraseña:"
-        android:textColor="#32FFFF"
-        android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
-
-    <TextView
-        android:id="@+id/textViewPassword"
-        android:layout_width="408dp"
-        android:layout_height="50dp"
-        android:text="   Usuario:"
-
-        android:textColor="#32FFFF"
-        android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
-
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="159dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="12dp"
-        android:hint="Ingrese su usuario"
-
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout"
+        android:layout_width="320dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSheet1"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:gravity="center"
+            android:hint="Usuario "
+            android:textColorHint="#32FFFF"
+            android:textSize="21sp" />
+
+
+        <EditText
+            android:id="@+id/editTextUsername2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:gravity="center"
+            android:hint="Contraseña "
+            android:textColorHint="#32FFFF"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="159dp"
+            android:layout_height="86dp"
+            android:layout_marginBottom="112dp"
+
+            android:hint="Ingrese su usuario" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="297dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="88dp"
         android:text="Iniciar"
-        android:textColor="#EA3CFF"
+        android:textColor="#32FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.743"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
