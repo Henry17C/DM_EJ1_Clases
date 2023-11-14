@@ -8,11 +8,13 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
+
     <Button
+        android:background="@color/white"
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Atrás"
+        android:text="@string/txt_ingresar_btn"
         android:textColor="#EA3CFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +35,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon" />
 
+
     <TextView
         android:id="@+id/textViewWelcome"
         android:layout_width="412dp"
         android:layout_height="73dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/alex_brush"
         android:gravity="center"
         android:text="Bienvenido"
         android:textColor="#FF0000"
@@ -72,15 +76,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
 
 
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="159dp"
         android:layout_height="86dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:hint="Ingrese su usuario"
 
-        app:layout_constraintTop_toBottomOf="@+id/textViewSheet1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSheet1"
+        app:layout_constraintVertical_bias="0.117" />
 
     <Button
         android:id="@+id/button"
