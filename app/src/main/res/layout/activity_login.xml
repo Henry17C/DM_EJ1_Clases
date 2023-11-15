@@ -11,23 +11,23 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="312dp"
-        android:layout_height="35dp"
+
+        style="@style/button_theme_action"
+    android:drawableLeft="@drawable/bttn_icon_change"
+        android:drawableTint="@color/white"
         android:layout_marginBottom="164dp"
-        android:background="#FDE12D"
         android:text="@string/txt_ingresar_btn"
-        android:textColor="#32FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="343dp"
         android:layout_height="190dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="320dp"
         android:layout_height="112dp"
         android:layout_marginStart="52dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="240dp"
         android:background="@drawable/rounded_linear_layout"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,15 +53,46 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
+            android:maxLines="1"
             android:background="@drawable/rounded_edittext_background"
+            android:drawableLeft="@drawable/user_circle_24"
+            android:drawableTint="@color/white"
             android:gravity="center"
             android:hint="Usuario "
+
             android:textColorHint="#32FFFF"
-            android:textSize="21sp" />
+            android:textSize="21sp"
+
+            />
 
 
         <EditText
             android:id="@+id/editTextUsername2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:hint="Contraseña "
+            android:textColorHint="#32FFFF"
+            android:textSize="21sp" />
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+/>
+
+        <EditText
+            android:id="@+id/editTextUserna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -69,34 +100,45 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_edittext_background"
+            android:drawableLeft="@drawable/user_circle_24"
+            android:drawableTint="@color/white"
             android:gravity="center"
-            android:hint="Contraseña "
+            android:hint="Usuario "
+
             android:textColorHint="#32FFFF"
-            android:textSize="21sp" />
+            android:textSize="21sp"
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="159dp"
-            android:layout_height="86dp"
-            android:layout_marginBottom="112dp"
+            />
 
-            android:hint="Ingrese su usuario" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="297dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="88dp"
+        style="@style/button_theme_action"
+
+
+        android:layout_marginBottom="164dp"
         android:text="Iniciar"
         android:textColor="#32FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="parent" />
 
-
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="217dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/anton"
+        android:text="My App"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,12 @@
     </style>
 
 
+    <style name="button_theme_action">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_shape_backroud</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#32FFFF</item>
+    </style>
+
+
 </resources>
