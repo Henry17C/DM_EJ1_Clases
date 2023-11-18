@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF3F0"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <Button
@@ -46,7 +46,7 @@
 
 
         <EditText
-            android:id="@+id/editTextUsername"
+            android:id="@+id/txt_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -67,7 +67,7 @@
 
 
         <EditText
-            android:id="@+id/editTextUsername2"
+            android:id="@+id/txt_pass"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,9 +119,10 @@
     <Button
         style="@style/button_theme_action"
 
+        android:id="@+id/btn_login"
 
         android:layout_marginBottom="164dp"
-        android:text="Iniciar"
+        android:text="Login"
         android:textColor="#32FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
