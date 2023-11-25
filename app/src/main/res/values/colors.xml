@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#BF000000</color>
+    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="cyan">#188fa7</color>
+    <color name="rosaPastel">#F299B9</color>
+    <color name="rosa">#D973AB</color>
+    <color name="violeta">#8C3074</color>
+    <color name="piel">#D98E7E</color>
+    <color name="pastel">#D98E7E</color>
 
-    <color name="purple">#9046CF</color>
-    <color name="greeen_soft">#63CAA7</color>
 
-    <color name="yellow_soft">#FFC172</color>
+    <color name="white1">#F8F9FD</color>
+    <color name="white2">#F8F9FD</color>
+    <color name="gris">#BECAD5</color>
+    <color name="cyan">#17CAC7</color>
+    <color name="diffA">#1899DD</color>
+    <color name="diffB">#13BED0</color>
+
+
+
+
 
 
 
